@@ -19,7 +19,7 @@ jobs:
 
             #install Node
             - name: Install and Setup Node js
-              uses: actions/setup-node@v
+              uses: actions/setup-node@v4
               with:
                   node_version: 22
 
