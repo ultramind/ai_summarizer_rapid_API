@@ -21,11 +21,30 @@ jobs:
             - name: Install and Setup Node js
               uses: actions/setup-node@v4
               with:
-                  node_version: 22
+                  node_version: '22'
 
             # install all dependencies
             - name: Install all Dependencies
               run: npm ci
+
+            # Running ESLint
+            - name: Run eslint
+              run: npm run lint:eslint
+
+            # Running prettier to organize code
+            - name: Run Prettier
+              run: npm run format:check
+
+            # run styleLint
+            - name: Running stylelint
+              run: npm run lint:stylelint
+
+            # Run code test
+            - name: Running test Coverage
+              run: npm run test:coverage
+              
+
+
 
 
     
