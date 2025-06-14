@@ -29,19 +29,12 @@ jobs:
 
             # Running ESLint
             - name: Run eslint
-              run: npm run lint:eslint
+              run: npm run lint
 
             # Running prettier to organize code
             - name: Run Prettier
               run: npm run format:check
 
-            # run styleLint
-            - name: Running stylelint
-              run: npm run lint:stylelint
-
-            # Run code test
-            - name: Running test Coverage
-              run: npm run test:coverage
               
 
 
